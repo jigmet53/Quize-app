@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".quize_ques"
+    android:padding="16dp"
+    android:background="@drawable/rr3">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_qc"
+        android:text="Question: "
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/h"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        android:textSize="20dp"
+        android:text="1/5"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/h"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv_qc"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The language spoken by the people by Pakistan is ?"
+        android:textSize="20sp"
+        android:id="@+id/tv"
+        android:layout_above="@+id/rg"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:text="Hindi"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+            android:text="Sindhi"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3"
+            android:text="English"
+            />
+
+    </RadioGroup>
+
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/s"
+        android:text="Submit"
+        android:onClick="cl"
+        android:layout_below="@+id/n"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        tools:ignore="OnClick" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/n"
+        android:text="Next"
+        android:onClick="click"
+        android:layout_below="@+id/rg"
+        android:layout_marginTop="16dp"
+        tools:ignore="OnClick" />
+
+    <LinearLayout
+        android:id="@+id/h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#AFA7EF"
+        android:layout_below="@+id/s"
+
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Jigmet Rinchen"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:background="#6AED83"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="11811334"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>
